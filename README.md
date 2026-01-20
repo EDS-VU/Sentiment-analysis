@@ -16,6 +16,7 @@ Sentiment classification is widely used in industry to monitor customer opinions
 However, it remains unclear whether deep learning models (CNNs, LSTMs) consistently outperform simpler, more interpretable ones such as logistic regression, especially when trained on corpora like Amazon reviews and tweets.
 
 This project answers three key questions:
+
 1.**How do neural networks compare to logistic regression in accuracy and F1‑score?**
 
 2.**Do richer text representations (embeddings) outperform TF‑IDF features?**
@@ -61,4 +62,3 @@ This project answers three key questions:
 ## Skills:
 - Data cleaning, NLP preprocessing, feature design, model development, and evaluation.
 
-The entire project was mostly developed in Python, leveraging libraries such as sqlite3, pandas, NLTK, scikit-learn, TensorFlow, and Matplotlib, with results documented in LaTeX.
