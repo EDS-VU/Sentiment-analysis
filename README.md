@@ -1,8 +1,10 @@
 # Sentiment Analysis: Logistic Regression vs. Neural Networks
 
-**Authors:** Pooya Mers, Duy Phan, Robbert Bernecker, Erin Breur
-**Date:** June 2025
-**Course:** Data Science Project 
+**Authors:** Pooya Mers, Duy Phan, Robbert Bernecker, Erin Breur.
+
+**Date:** June 2025.
+
+**Course:** Data Science Project.
 
 ## Project Summary 
 This project evaluates how traditional machine‑learning models compare to deep neural networks in **ternary sentiment classification** (positive, neutral, negative). Using a combined dataset of **205k Amazon reviews** and **50k Twitter tweets**, we build a full NLP pipeline, from data extraction and preprocessing to feature engineering, model training, and performance evaluation.
@@ -15,7 +17,9 @@ However, it remains unclear whether deep learning models (CNNs, LSTMs) consisten
 
 This project answers three key questions:
 1.**How do neural networks compare to logistic regression in accuracy and F1‑score?**
+
 2.**Do richer text representations (embeddings) outperform TF‑IDF features?**
+
 3.**How well do models adapt to two different text domains?**
 
 ## Approach
@@ -56,28 +60,5 @@ This project answers three key questions:
 
 ## Skills:
 - Data cleaning, NLP preprocessing, feature design, model development, and evaluation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-This project focuses on performing sentiment analysis on a combined dataset of Amazon product reviews and Twitter tweets. A total of 205,000 reviews and 50,083 tweets were extracted from an SQLite database and preprocessed to remove noise such as URLs, hashtags, mentions, non-English words, stopwords, and unnecessary characters. Special care was taken to convert emoticons, emojis, and numbers into meaningful word representations.
-
-After cleaning, exploratory data analysis was conducted, including unigram and bigram frequency plots and word-length distributions to compare linguistic characteristics across platforms. The dataset was split into training, validation, and test sets using stratified sampling to preserve sentiment class distribution. For feature engineering, TF-IDF vectors were created with unigrams and bigrams, and Word2Vec embeddings were trained to capture semantic context. 
-
-For sentiment classification, three machine learning models were implemented:
-- **Multinomial Logistic Regression** with L2 regularization  
-- **Convolutional Neural Network (CNN)** with 400 filters and kernel size 5  
-- **Bidirectional LSTM (Bi-LSTM)** with 64 and 32 units  
-
-Model performance was evaluated using accuracy and F1-scores. The Bi-LSTM model achieved the highest accuracy at 72.8%, followed closely by CNN and Logistic Regression.
 
 The entire project was mostly developed in Python, leveraging libraries such as sqlite3, pandas, NLTK, scikit-learn, TensorFlow, and Matplotlib, with results documented in LaTeX.
